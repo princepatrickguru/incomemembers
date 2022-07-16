@@ -1,0 +1,6 @@
+[30-Jun-2022 07:13:31 America/New_York] PHP Notice:  Undefined variable: result in /home/agronuik/inmembers.com/user/session.php on line 17
+[30-Jun-2022 07:13:31 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/agronuik/inmembers.com/user/session.php on line 17
+[30-Jun-2022 07:14:00 America/New_York] PHP Notice:  Undefined variable: result in /home/agronuik/inmembers.com/user/session.php on line 17
+[30-Jun-2022 07:14:00 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/agronuik/inmembers.com/user/session.php on line 17
+[30-Jun-2022 10:38:24 America/New_York] PHP Notice:  Undefined variable: user_name in /home/agronuik/inmembers.com/user/topnav.php on line 9
+[02-Jul-2022 02:37:31 America/New_York] PHP Notice:  Undefined variable: user_name in /home/agronuik/inmembers.com/user/topnav.php on line 9

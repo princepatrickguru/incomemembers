@@ -1,0 +1,225 @@
+
+    .header {
+        background-color: #000;
+        box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+    
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px;
+        width: 100%;
+    }
+
+
+    .navbar-menu{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .nav-logo{
+        padding:5px 5px;
+        width: 10%;
+    }
+    
+    .nav-logo .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        float: left;
+        font-size: 2em;
+        text-decoration: none;
+    }
+    
+    .nav-logo .logo{
+        width: 70px;
+    }
+
+    .logo-img{
+        width: 100%;
+    }
+
+    .nav-menu{
+        width: 50%;
+    }
+
+    .nav-invest{
+        display: block;
+        padding: 10px 1px;
+        text-decoration: none;
+        color: #fff;
+        width: 40%;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    .nav-invest button{
+        font-size: 1em;
+        font-weight: bold;
+        padding: 10px 14px;
+    }
+    
+    .nav-invest a{
+        text-decoration: none;
+    }
+    
+    .nav-menu ul {
+        margin: 0;
+        padding: 0px;
+        list-style: none;
+        overflow: hidden;
+    }
+    
+    .nav-menu ul li a {
+        display: block;
+        padding: 20px 20px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    .nav-menu li a:hover,
+    .nav-menu .menu-btn:hover {
+        color: #ff0000;
+    }
+  
+    .header-border{
+        border-bottom: 1px solid #fff;
+    }
+  
+    .header .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+    
+    .header .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+    
+    .header .menu-icon .navicon {
+        background-color: #fff;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background-color .2s ease-out;
+        width: 18px;
+    }
+    
+
+    .header .menu-icon .navicon:before,
+    .header .menu-icon .navicon:after {
+        background: #fff;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    
+    .header .menu-icon .navicon:before {
+        top: 5px;
+    }
+    
+    .header .menu-icon .navicon:after {
+        top: -5px;
+    }
+    
+    /* menu btn */
+    
+    .header .menu-btn {
+        display: none;
+    }
+    
+    .header .menu-btn:checked ~ .menu {
+        max-height: inherit;
+    }
+    
+    .header .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+    }
+    
+    .header .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+    
+    .header .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+    
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+    
+  
+  /* 48em = 768px */
+  
+  @media only screen and (min-width: 600px) {
+    .nav-logo{
+        padding: 10px 5px;
+        width: 30%;
+    }
+    
+    .nav-logo .logo{
+        width: 100px;
+    }
+
+    .logo-img{
+        width: 100%;
+    }
+
+    .nav-menu{
+        width: 50%;
+    }
+
+    .nav-invest{
+        width: 20%;
+        text-align: right;
+    }
+    
+    .navbar-menu{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .nav-menu li {
+      float: left;
+    }
+    
+    .nav-menu li a {
+      padding: 20px 30px;
+    }
+
+    .nav-menu .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+
+    .nav-menu .menu-icon {
+      display: none;
+    }
+
+    .navbar-menu{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+  }
+  

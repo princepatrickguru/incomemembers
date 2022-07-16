@@ -2,7 +2,7 @@
     <?php 
     if(isset($_GET["success"])){
     ?>
-        <p class="text-success">Account Opening Successful!</p>
+        <p class="text-success"> You've Successfully Open an Account wiith Income Members!</p>
     <?php
     }
     ?>
@@ -22,4 +22,15 @@
     <?php
     }
     ?>
+
+    <?php 
+    if(isset($_GET["noacc"])){
+    ?>
+        <p class="text-danger">Account Not Found!</p>
+    <?php
+    }
+    ?>
+
+
+
 </span>

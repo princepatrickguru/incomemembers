@@ -4,7 +4,8 @@ session_start();
 if(!isset($_SESSION['id']) || empty($_SESSION['id'])){
 
     header("Location: ../login.php"); 
-  
+    exit();
+
 }else{
 	
 	$user_query = sprintf("select * from users where id='%s' ",  $_SESSION['id']); 
@@ -20,6 +21,9 @@ if(!isset($_SESSION['id']) || empty($_SESSION['id'])){
         $user_email = $user_row['email'];
         $user_password = $user_row['password'];
         $user_balance = $user_row['balance'];
+    }else{
+        header("Location: ../login.php?noacc"); 
+        exit();
     }
 
     $user_active_investment_count = countInvestment($user_id, $statusRunning);
